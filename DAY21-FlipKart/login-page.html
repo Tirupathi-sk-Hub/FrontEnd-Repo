@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .input-control  .error {
+            color: red;
+            font-size: 11px;
+        }
+
+        .input-control.error input{
+            border-color: red;
+        }
+
+        .input-control.success input{
+            border-color: green;
+        }
+
+        #form {
+            background-color: lightblue;
+            min-height: 100vh;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/" id="form">
+        <div class="container">
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <div class="error"></div>
+            </div>
+
+            <a type="submit" href="D21_Flipkart-Html&Css.html" 
+            style="text-decoration: none;
+                    border: 2px solid black;
+                    padding: 4px;">Login</a>
+        </div>
+    </form>
+
+    <script>
+        const form = document.getElementById('form');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            validateInputs();
+        });
+
+        const setError = (element, message) => {
+            const inputcontrol = element.parentElement;
+            const errorDisplay = inputcontrol.querySelector('.error');
+
+            errorDisplay.innerHTML = message;
+            inputcontrol.classList.add('error');
+            inputcontrol.classList.remove('success');
+        }
+
+        const setSuccess = (element) => {
+            const inputcontrol = element.parentElement;
+            const errorDisplay = inputcontrol.querySelector('.error');
+
+            errorDisplay.innerHTML = '';
+
+            inputcontrol.classList.add('success');
+            inputcontrol.classList.remove('error');
+        }
+
+        const validateInputs = () => {
+            const emailValue = email.value.trim();
+            const passwordValue = password.value.trim();
+
+            // console.log(emailValue);
+            if (emailValue === '') {
+                setError(email, 'Email is required!');
+            }   else {
+                setSuccess(email);
+            }
+
+            if (passwordValue === '') {
+                setError(password, 'password is required!');
+            }   else {
+                setSuccess(password);
+            }
+        }
+    </script>
+</body>
+</html>

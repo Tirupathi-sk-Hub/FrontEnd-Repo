@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(74, 74, 231);
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 200;
+    height: 60px;
+}
+
+.name {
+    padding-left: 110px;
+    margin-right: -120px;
+    padding-right: -50px;
+    width: 90px;
+    max-width: 150px;
+    color: white;
+    font-weight: bold;
+}
+.sub-name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.name1 {
+    color: yellow;
+}
+.search-con {
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    padding-left: 15px;
+    margin-left: -60px;
+    margin-right: 20px;
+}
+
+.search-div {
+    display: flex;
+    /* align-items: center; */
+    flex: 1;
+    position: relative;
+}
+.tooltip {
+    position: absolute;
+    font-size: 15px;
+    top: 37px;
+    background-color: grey;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.search-div:hover .tooltip {
+    opacity: 1;
+}
+
+.search-bar {
+    flex: 1;
+    height: 34px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    padding-left: 10px;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    margin-left: -3px;
+    border-left: none;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 45px;
+    height: 30px;
+}
+
+.login-btn {
+    margin-left: 20px;
+    width: 100px;
+    height: 34px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    color: rgb(74, 74, 231);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.right-section {
+    /* background-color: lightblue; */
+    width: 300px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn1, .btn2, .btn3 {
+    background-color: rgb(74, 74, 231);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+/* .btn3 {
+    display: flex;
+    align-items: center;
+}
+.btn3 .img {
+    width: 30px;
+    height: 25px;
+    background-color: rgb(74, 74, 231);
+} */

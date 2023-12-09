@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Designing Header</title>
+        <style>
+            .products-view {
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+                background-color: white;
+
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: white;
+
+                box-shadow: 1px 1px 4px rgb(10, 10, 8);
+
+                margin-bottom: 1px;
+            }
+
+            .second-img {
+                background-color: lightyellow;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 5px 0px 5px;
+            }
+
+            .img {
+                height: 130px;
+                object-fit: fill;
+                object-position: center;
+                display: flex;
+                flex: 1;
+            }
+
+            .prdct-img {
+                height: 200px;
+                width: 200px;
+                padding: 20px;
+                object-fit: contain;
+                object-position: center;
+            }
+           
+            .prd-con :hover {
+                height: 210px;
+                width: 210px;
+            }
+            .prd-con:hover .text {
+                height: 100%;
+                width: 100%;
+            }
+            .complete {
+                display: grid;
+            }
+            
+            .img-1a {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="products-view">
+            <div><img src="img1.png"></div>
+            <div><img src="img2.png"></div>
+            <div><img src="img3.png"></div>
+            <div><img src="img4.png"></div>
+            <div><img src="img5.jpg"></div>
+            <div><img src="img6.png"></div>
+            <div><img src="img7.png"></div>
+            <div><img src="img8.png"></div>
+            <div><img src="img9.png"></div>
+            <div><img src="imgX.png"></div>
+        </div>
+
+        <div class="complete">
+            <div class="second-img"><img class="img" src="download.jpg"></div>
+        </div>
+
+        
+        <div style="display: grid;
+                    grid-template-columns: 1fr 200px;
+                    column-gap: 15px;">
+            <!--Item 1-->
+                <div style="display: grid;
+                            grid-template-columns: 230px 1fr 1fr 1fr;
+                            /* background-color: lightpink; */
+                            box-shadow: 2px 2px 4px rgba(23, 10, 11, 0.8);
+                            align-items: center;
+                            margin-left: 0px;">
+
+                    <div style="display: flex;
+                                justify-self: center;
+                                align-items: end;
+                                background-color: white;
+                                height: 340px;
+                                position: relative;">
+                        <img class="img1" src="left-img1.jpg">
+                        <button style="position: absolute;
+                                       top: 60px;
+                                       left: 70px;">VIEW ALL</button>
+                    </div>
+                    
+                    <div class="prd-con"><img class="prdct-img" src="prdct1.jpeg"><div class="text">hello</div></div>
+                    <div class="prd-con"><img class="prdct-img" src="prdct2.jpeg"></div>
+                    <div class="prd-con"><img class="prdct-img" src="prdct3.jpeg"></div>
+
+                </div>
+
+            <!--Item 2-->
+            <div style="background-color: blue;
+                        box-shadow: 2px 2px 4px rgba(23, 10, 11, 0.8);">
+
+                <img class="img-1a" src="right-img1.jpg">
+                
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

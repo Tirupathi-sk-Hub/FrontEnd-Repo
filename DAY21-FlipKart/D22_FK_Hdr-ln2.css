@@ -1,0 +1,51 @@
+.header-line2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.imga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.imge {
+    width: 65px;
+    padding-bottom: 10px;
+}
+
+.imga div {
+    color: rgb(75, 74, 74);
+}
+
+.imga:hover div {
+    color: rgb(74, 74, 231);
+}
+
+
+.line {
+    height: 0px;
+    border-width: 0px;
+    display: flex;
+    flex: 1;
+    border-color: grey;
+    border-style: solid;
+}
+
+
+
+.offer-img {
+    flex: 1;
+    height: 270px;
+    width: 200px;
+}
+
+.offer-con {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    background-color: rgb(223, 220, 220);
+}

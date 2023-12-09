@@ -1,0 +1,113 @@
+.main-box {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    /* column-gap: 10px;
+    background-color: orange; */
+}
+.main-box2 {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+.main-con {
+    height: 400px;
+}
+.left-img1 {
+    height: 400px;
+    width: 250px;
+    object-fit: contain;
+    object-position: bottom;
+    /* border: 2px solid black; */
+}
+
+.left-con {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.left-content {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.left-content div {
+    padding-left: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.left-content button {
+    cursor: pointer;
+}
+
+.p-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.prdct1-con {
+    display: flex;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.prdct1-con:hover {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.prdct1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prdct1 img {
+    padding-bottom: 30px;
+}
+.prdct-img {
+    width: 200px;
+    height: 160px;
+    margin: 10px;
+}
+
+.prdct1-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+
+.type {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.price {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(38, 102, 38);
+}
+.brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+
+.right-img {
+    width: 250px;
+    height: 380px;
+}
+/* .right-con {
+    display: flex;
+} */
+
+.right-box {
+    display: flex;
+    align-items: center;
+    /* background-color: yellow; */
+}

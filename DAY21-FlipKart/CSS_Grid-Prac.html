@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid clm-Row_gap Prac</title>
+
+        <style>
+            .main-container {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                column-gap: 10px;
+                row-gap: 10px;
+            }
+            .main-container div {
+                background-color: lightblue;
+            }
+
+            .cg-gap {
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: 1fr 200px;
+                column-gap: 20px;
+            }
+
+          
+        </style>
+    </head>
+    <body>
+
+        <div class="main-container">
+
+            <div>1fr</div>
+            <div>1fr</div>
+            <div>1fr</div>
+            <div>1fr</div>
+            <div>1fr</div>
+            <div>1fr</div>
+            
+        </div>
+
+        <div class="cg-gap">
+
+            <div style="background-color: lightpink;
+                        display: grid;
+                        grid-template-columns: 200px 1fr 1fr;">1fr
+                <div>1a-fr</div>
+                <div>1b-fr</div>
+            </div>
+
+            <div style="background-color: lightgoldenrodyellow;">200px</div>
+
+        </div>
+    </body>
+</html>
