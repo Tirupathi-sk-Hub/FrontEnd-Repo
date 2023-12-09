@@ -1,0 +1,42 @@
+.menu-tagline {
+    margin:10px 5px 10px 85px;
+    font-size: 30px;
+}
+
+main {
+    background-color: rgb(233, 231, 231);
+    margin-left: -40px;
+    margin-right: -40px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.dish-img {
+    width:100%;
+}
+
+.item {
+    /* background-color: lightblue; */
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.menu-type {
+    /* background-color: lightblue; */
+    width: 1180px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 85px;
+    margin-right: 85px;
+}

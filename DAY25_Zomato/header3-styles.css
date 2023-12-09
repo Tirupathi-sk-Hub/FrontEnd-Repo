@@ -1,0 +1,34 @@
+.adjust-img {
+    width: 25px;
+}
+
+.adjust-img1 {
+    width: 20px;
+    height: 20px;
+}
+.fltr-button {
+    padding: 3px 10px 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.fltr-button:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+.setting-header {
+    /* background-color: lightblue; */
+    width: 400px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 85px;
+    display: flex;
+    justify-content: space-between;
+}

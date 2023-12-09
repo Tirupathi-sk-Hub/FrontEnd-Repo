@@ -1,0 +1,118 @@
+header {
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 23px;
+    margin-right: -80px;
+}
+
+.head-middle-section {
+    /* background-color: green; */
+    font-family: Okra, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 750px;
+    margin-left: -70px;
+}
+
+.head-middle-section input{
+    box-shadow: 3px 3px 6px rgba(23, 43, 32, 0.8);
+}
+
+.srch1-con {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex:1;
+}
+.srch1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    flex: 1;
+    height: 40px;
+    padding-left: 30px;
+}
+
+
+.srch2-con {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    position: relative;
+}
+.srch2 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    flex: 2;
+    height: 38px;
+    padding-left: 35px;
+}
+
+
+.head-right-buttons {
+    /* background-color: lightblue; */
+    font-family: Okra, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    margin-left: -100px;
+}
+
+.pin-point-img {
+    width: 30px;
+}
+
+.point-img-con {
+    position: absolute;
+}
+
+.search-logo {
+    width: 22px;
+}
+
+.search-logo-con {
+    position: absolute;
+    left: 5px;
+}
+
+.login-btn, .signup-btn{
+    padding: 5px 10px 5px 10px;
+    font-size: 19px;
+    font-weight:lighter;
+    height: 34px;
+    background-color: white;
+    border: none;
+    transition: background-color 0.2s, border-radius 0.2s;
+}
+.login-btn:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.signup-btn:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.places {
+    margin-left: 85px;
+    margin-top: 25px;
+}

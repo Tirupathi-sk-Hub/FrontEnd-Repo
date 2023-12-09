@@ -1,0 +1,50 @@
+.scoty-img {
+    width: 35px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.scoty-con {
+    /* background-color: orange; */
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.fooding-option:hover .scoty-con{
+    background-color: orange;
+}
+
+.fooding-option {
+    /* background-color: lightpink; */
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.fooding-option:hover{
+    color: orange;
+}
+
+.fooding-option-con {
+    width: 600px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-left: 85px;
+    margin-top: 25px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+.type {
+    font-size: 20px;
+    white-space: nowrap;
+}
